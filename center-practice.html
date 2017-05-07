@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container, .container::before, .content, .pic {
+            display: inline-block;
+            vertical-align: middle;
+        }
+                
+        .container {
+            width: 600px;
+            height: 400px;
+            background-color: #c7c7c7c;
+            font-size: 0;
+        }
+        .container::before {
+            content: "";
+            height: 100%;
+        }
+        .content {
+            width: 400px;
+            box-sizing: border-box;
+            font-size: 16px;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+        .pic {
+            width: 200px;
+            height: 200px;
+            background-color: #7989ff;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+<!--        <div class="qq"></div>-->
+        <div class="content">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima porro architecto vel nisi! Corporis, excepturi commodi porro temporibus quis, nesciunt, minima libero corrupti beatae dignissimos architecto mollitia reiciendis sequi provident.
+            </p>
+        </div>
+        <div class="pic"></div>
+    </div>
+</body>
+</html>

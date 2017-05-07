@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 400px;
+            background-color: #50bcff;
+            font-size:0;
+/*
+            
+            text-align: center;
+            line-height: 400px;
+        
+*/
+            display: table;    /* display: table -> ie6, 7不支援 */
+            
+        }
+        .qq {
+            display: inline-block;
+            vertical-align: middle;
+            
+        }
+        .box::before {
+
+            content: "";
+            /* 表格儲存格 */
+            /*
+            display: table-cell;    
+            */
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size:16px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+<!--        <div class="qq"></div>-->
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima porro architecto vel nisi! Corporis, excepturi commodi porro temporibus quis, nesciunt, minima libero corrupti beatae dignissimos architecto mollitia reiciendis sequi provident.
+        </div>
+    </div>
+</body>
+</html>
